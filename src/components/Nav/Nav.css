@@ -11,11 +11,13 @@
     order: 3;
     margin-left:auto ;
 }
-.header .carrito img{
+.header .logo img {
+    border-radius: 60%;
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
+
 .header .logo img:hover{
     transform: scale(1.2);
 }

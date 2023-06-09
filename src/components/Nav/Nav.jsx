@@ -1,13 +1,16 @@
 
 import './Nav.css'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import '../CartWidget/CartWidget'
+import { CartWidget } from '../CartWidget/CartWidget.jsx';
 export function Nav() {
     return (
         <header className='header'>
-            <div className='carrito'>
-                <ShoppingCartIcon/>
-                <p>3</p>
+            <div className='logo'>
+                <img src="../public/Logo_nike_principal.jpg" alt="" />
             </div>
+            <article className='carrito'>
+            <CartWidget/>
+            </article>
             <nav >
                 <ul className='nav-links'>
                     <li><a href="#">Incio</a></li>
