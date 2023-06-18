@@ -2,22 +2,29 @@
 import './Nav.css'
 import '../CartWidget/CartWidget'
 import { CartWidget } from '../CartWidget/CartWidget.jsx';
+import { Link } from 'react-router-dom';
+
 export function Nav() {
     return (
+
         <header className='header'>
             <div className='logo'>
-                <img src="../public/Logo_nike_principal.jpg" alt="" />
+                <img src="../public/logo_ecommerce.jpg" alt="" />
             </div>
             <article className='carrito'>
-            <CartWidget/>
+                <CartWidget />
             </article>
             <nav >
                 <ul className='nav-links'>
-                    <li><a href="#">Incio</a></li>
-                    <li><a href="#">Contacto</a></li>
-                    <li><a href="#">About</a></li>
+                    <Link className='li' to='/'>Inicio</Link>
+                    <Link className='li' to='/contact'>Contacto</Link>
+                    <Link className='li' to='/about'>About</Link>
                 </ul>
             </nav>
+
         </header>
+
+
+
     )
 }

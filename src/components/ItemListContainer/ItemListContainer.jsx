@@ -1,8 +1,35 @@
 import './ItemListContainer.css'
-export function ItemListContainer ({greetings}){
-    return(
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import { Link } from 'react-router-dom';
+
+export function ItemListContainer({ products,  }) {
+    return (
         <>
-        <p className='texto'>{greetings}</p>
+            <main className='products'>
+                <ul>
+                    {
+                        products.map(product => (
+                            
+                                <li key={product.id}>
+                                    <Link to={`detail/${product.id}`}>
+                                    <img
+                                        src={product.thumbnail}
+                                        alt={product.title} />
+
+                                    <div>
+                                        <strong>{product.title}</strong> -$USD {product.price}
+                                    </div> 
+                                    </Link>
+                                    <button>
+                                        <AddShoppingCartIcon />
+                                    </button>
+
+                                </li>
+                           
+                        ))
+                    }
+                </ul>
+            </main>
         </>
     )
 }

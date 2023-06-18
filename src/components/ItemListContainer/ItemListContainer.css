@@ -1,5 +1,43 @@
-.texto{
-    text-align: center;
-    font-size: 5rem;
-    font-weight: 5;
+.products{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.products ul {
+   display: grid;
+   grid-template-columns: repeat(auto-fit ,minmax(200px,1fr));
+   gap: 1rem;
+}
+.products li{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    background: #111;
+    color: #fff;
+    padding: 1rem;
+}
+.products img{
+    border-radius: 4px;
+    width: 100%;
+    aspect-ratio: 3/2;
+    display: block;
+    object-fit: cover;
+    background: #fff;
+}
+.products button{
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .6em 1.2em;
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+}
+.products button:hover{
+    border-color: #646cff;
+}
+.products button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
 }

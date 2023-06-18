@@ -11,11 +11,17 @@
     order: 3;
     margin-left:auto ;
 }
+.header .logo{
+    position: relative;
+    display: inline-block;
+}
 .header .logo img {
+    display: block;
     border-radius: 60%;
     height: 70px;
     width: auto;
     transition: all 0.3s;
+    opacity: .8;
 }
 
 .header .logo img:hover{
@@ -33,11 +39,11 @@
     list-style: none;
 }
 
-.header .nav-links li{
+.header .nav-links .li{
     display: inline-block;
     padding: 0 20px;
 }
-.header .nav-links li:hover{
+.header .nav-links .li:hover{
     transform: scale(1.1);
 }
 .header .nav-links a{
