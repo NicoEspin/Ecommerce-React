@@ -1,0 +1,44 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #000;
+    margin: 20px;
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.product p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.product button {
+
+    border-radius: 10px;
+    cursor: pointer;
+    padding: .6em 1.2em;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+.product button:hover {
+    border-color: #646cff;
+}
+
+.product button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
