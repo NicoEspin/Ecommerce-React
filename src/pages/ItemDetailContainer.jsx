@@ -1,6 +1,5 @@
 import "./itemDetail.css"
 import { useParams } from 'react-router-dom';
-import { ItemListContainer } from "../components/ItemListContainer/ItemListContainer";
 import { products } from "../mocks/products.json";
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
@@ -18,7 +17,7 @@ export const ItemDetailContainer = () => {
 
   return (
     <div className='product'>
-      <h3>{product.title}</h3>
+      <h3>{product.title}</h3>  $USD {product.price}
       <img
         src={product.thumbnail}
         alt={product.title} />
